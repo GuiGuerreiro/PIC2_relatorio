@@ -35,8 +35,8 @@ report.pdf: figures/* $(TSRC)
 	pdflatex -jobname report report.tex
 
 #view document
-view: report.pdf
-	evince $< &
+#view: report.pdf
+#	evince $< &
 
 clean:
 	@find . -maxdepth 1 -type f -not \( -name Makefile -o \
